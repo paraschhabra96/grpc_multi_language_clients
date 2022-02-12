@@ -1,0 +1,2 @@
+grpc_tools_node_protoc --proto_path=../../protos --js_out=import_style=commonjs,binary:./calculatorpb --grpc_out=grpc_js:./calculatorpb calculator.proto
+# --js_out=import_style=commonjs,binary:../node/static_codegen/ --grpc_out=grpc_js:../node/static_codegen helloworld.proto

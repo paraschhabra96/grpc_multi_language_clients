@@ -1,0 +1,19 @@
+syntax="proto3";
+
+// [START go_declaration]
+option go_package = "../calculatorpb";
+// [END go_declaration]
+
+
+message SumRequest {
+  double first_num = 1;
+  double second_num = 2;
+}
+
+message SumResponse {
+  double result = 1;
+}
+
+service CalculatorService {
+  rpc Sum(SumRequest) returns (SumResponse) {};
+}
